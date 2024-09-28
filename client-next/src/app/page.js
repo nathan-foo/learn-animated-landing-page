@@ -1,95 +1,51 @@
-import Image from "next/image";
 import styles from "./page.module.css";
 
 export default function Home() {
   return (
-    <div className={styles.page}>
-      <main className={styles.main}>
-        <Image
-          className={styles.logo}
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol>
-          <li>
-            Get started by editing <code>src/app/page.js</code>.
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
-
-        <div className={styles.ctas}>
-          <a
-            className={styles.primary}
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className={styles.logo}
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-            className={styles.secondary}
-          >
-            Read our docs
-          </a>
+    <body>
+      <div className="container">
+        <div className="pre-loader">
+          <div className="loader"></div>
+          <div className="loader-bg"></div>
         </div>
-      </main>
-      <footer className={styles.footer}>
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+        <div className="loader-content">
+          <div className="count"><p>0</p></div>
+          <div className="copy"><p className="ml16"></p>New Reality</div>
+        </div>
+        <div className="loader-2"></div>
+      </div>
+      <div className="site-content">
+        <nav>
+          <div className="logo">
+            <a href="#">New Reality</a>
+          </div>
+          <div className="links">
+            <a href="#">Info</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Contact</a>
+          </div>
+        </nav>
+        <div className="header">
+          <h1>N</h1>
+          <h1>e</h1>
+          <h1>w</h1>
+          <h1>r</h1>
+          <h1>e</h1>
+          <h1>a</h1>
+          <h1>l</h1>
+        </div>
+          <footer>
+            <div className="footer-copy">
+              <p>
+                New Reality is a design studio based in Tokyo, Japan. We work with many companies to build and proactively deliver engaging brand experiences. We are unique in our ability to take a strategic approach while being visually clean.
+              </p>
+            </div>
+            <div className="footer-nav">
+              <div className="img"></div>
+              <div className="img"></div>
+            </div>
+          </footer>
+      </div>
+    </body>
   );
 }
