@@ -108,6 +108,7 @@ nav > div {
 .header h1 {
     flex: 1;
     position: relative;
+    top: 200px;
     font-size: 20vw;
     font-family: "PP Editorial Old";
     font-weight: 500;
