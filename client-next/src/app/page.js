@@ -3,12 +3,11 @@
 import "./styles.css";
 import { gsap } from "gsap";
 import anime from "animejs";
-import { useEffect, useLayoutEffect } from "react";
+import { useGSAP } from "@gsap/react";
 
 export default function Home() {
-  const useIsomorphicLayoutEffect = typeof window !== 'undefined' ? useLayoutEffect : useEffect;
 
-  useIsomorphicLayoutEffect(() => {
+  useGSAP(() => {
     function startLoader() {
       let counterElement = document.querySelector(".count p");
       let currentValue = 0;
